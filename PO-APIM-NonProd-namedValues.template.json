@@ -1,0 +1,121 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "ApimServiceName": {
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "properties": {
+        "tags": [],
+        "secret": false,
+        "displayName": "po-bot-devops-dev",
+        "value": "https://po-bot-devops-dev.azurewebsites.net/"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/po-bot-devops-dev')]",
+      "type": "Microsoft.ApiManagement/service/namedValues",
+      "apiVersion": "2021-01-01-preview"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": false,
+        "displayName": "po-configurations-devops-dev",
+        "value": "https://po-configuration-devops-dev.azurewebsites.net/"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/po-configurations-devops-dev')]",
+      "type": "Microsoft.ApiManagement/service/namedValues",
+      "apiVersion": "2021-01-01-preview"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": false,
+        "displayName": "po-globaldata-devops-dev",
+        "value": "https://po-globaldata-devops-dev.azurewebsites.net/"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/po-globaldata-devops-dev')]",
+      "type": "Microsoft.ApiManagement/service/namedValues",
+      "apiVersion": "2021-01-01-preview"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": false,
+        "displayName": "po-inspection-devops-dev",
+        "value": "https://po-inspection-devops-dev.azurewebsites.net/"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/po-inspection-devops-dev')]",
+      "type": "Microsoft.ApiManagement/service/namedValues",
+      "apiVersion": "2021-01-01-preview"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": false,
+        "displayName": "po-listing-devops-dev",
+        "value": "https://po-listing-devops-dev.azurewebsites.net/"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/po-listing-devops-dev')]",
+      "type": "Microsoft.ApiManagement/service/namedValues",
+      "apiVersion": "2021-01-01-preview"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": false,
+        "displayName": "po-masterdata-devops-dev",
+        "value": "https://po-masterdata-devops-dev.azurewebsites.net/"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/po-masterdata-devops-dev')]",
+      "type": "Microsoft.ApiManagement/service/namedValues",
+      "apiVersion": "2021-01-01-preview"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": false,
+        "displayName": "po-notification-devops-dev",
+        "value": "https://po-notification-devops-dev.azurewebsites.net/"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/po-notification-devops-dev')]",
+      "type": "Microsoft.ApiManagement/service/namedValues",
+      "apiVersion": "2021-01-01-preview"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": false,
+        "displayName": "po-profile-devops-dev",
+        "value": "https://po-profile-devops-dev.azurewebsites.net/"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/po-profile-devops-dev')]",
+      "type": "Microsoft.ApiManagement/service/namedValues",
+      "apiVersion": "2021-01-01-preview"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": false,
+        "displayName": "PO-ServiceAccountToken-Dev",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiI5IiwiTW9iaWxlTnVtYmVyIjoiKzkxODc2NzU4MjI2MyIsIm5iZiI6MTYzOTM5MTY1MiwiZXhwIjoxNjk5MzkxNjUyfQ.Hg7GP6iTVT1pCSfAsFOJOrIWbYGmqKn34F6nEbD0mVc"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/po-serviceaccounttoken-dev')]",
+      "type": "Microsoft.ApiManagement/service/namedValues",
+      "apiVersion": "2021-01-01-preview"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": false,
+        "displayName": "po-support-devops-dev",
+        "value": "https://po-support-devops-dev.azurewebsites.net/"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/po-support-devops-dev')]",
+      "type": "Microsoft.ApiManagement/service/namedValues",
+      "apiVersion": "2021-01-01-preview"
+    }
+  ]
+}
